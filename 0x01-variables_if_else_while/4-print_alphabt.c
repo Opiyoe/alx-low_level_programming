@@ -11,8 +11,10 @@ int main(void)
 	while (w <= 122)
 	{
 		if (w == 111 || w == 113)
+		{
 			w++;
 		continue;
+		}
 		putchar(w);
 		w++;
 	}
