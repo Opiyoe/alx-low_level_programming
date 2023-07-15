@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
  * main-Entry point
- * Description-print numbers of base 16
- * Retun :0
+ * Return:0
  */
 int main(void)
 {
