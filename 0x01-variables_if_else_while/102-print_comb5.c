@@ -11,17 +11,21 @@ int main(void)
 
 	for (n = 0; n <= 99; n++)
 	{
-		for (v = n + 1; v <= 99; v++)
+		for (v = 0; v <= 99; v++)
 		{
-			putchar(n / 10 + '0');
-			putchar((n % 10) + '0');
-			putchar(' ');
-			putchar(v / 10 + '0');
-			putchar((v % 10) + '0');
-			if (n == 99 && v == 98)
-				continue;
-			putchar(',');
-			putchar(' ');
+			if (n < v && n != v)
+			{
+				putchar(n / 10 + '0');
+				putchar((n % 10) + '0');
+				putchar(' ');
+				putchar(v / 10 + '0');
+				putchar((v % 10) + '0');
+				if (n != 98 || v != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
