@@ -1,11 +1,14 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * _abs - Computes the absolute value of integer
- * @c: The number to be computed
+ * _abs - Checks the code
+ * @c:The number to be checked.
  * return: Abslute value of number or zero
  */
 int _abs(int c)
 {
+	int c;
+
 	if (c < 0)
 	{
 		int abs_val;
