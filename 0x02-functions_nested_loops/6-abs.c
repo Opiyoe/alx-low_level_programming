@@ -1,20 +1,17 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _abs - Checks the code
- * @c:The number to be checked.
- * return: Abslute value of number or zero
+ * _abs - Entry point
+ * Description- Computes absolute value of integer
+ * @c:The number to be computed
+ * Return: the absolute value of int
  */
 int _abs(int c)
 {
-	int c;
 
-	if (c < 0)
+	if (c >= 0)
 	{
-		int abs_val;
-
-		abs_val = c * -1;
-		return (abs_val);
+		return (c);
 	}
-	return (c);
+	return (-c);
 }
